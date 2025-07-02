@@ -1,0 +1,91 @@
+body {
+    background: rgb(232, 232, 232); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 300px;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(39, 61, 69, 0.6);
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 36px;
+    text-align: center;
+    margin: 0 0 50px 0;
+    color: rgb(39, 61, 69);
+}
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 821px;
+    border: 10px solid white;
+}
+
+p {
+    margin: 50px 0 0 0;
+    color: rgba(39, 61, 69, 0.8);
+    font-size: 24px;
+    line-height: 1.48;
+    padding: 0 45px;
+}
+
+ul {
+    margin: 50px 0 50px 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+    margin: 0 0 15px 0;
+    padding: 0 0 0 30px;
+    list-style: none;
+    background: url('./check\ icon.png') left top no-repeat;
+}
+
+.colored {
+    color: #7FB7B3;
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.line-through {
+    color: rgba(39, 61, 69, 0.3);
+    text-decoration: line-through rgba(39, 61, 69, 0.3);
+}
+
+button {
+    border: none;
+    border-radius: 50px;
+    letter-spacing: 3px;
+    padding: 15px 30px;
+    background: rgb(128, 183, 179);
+    font-size: 14px;
+    color: white;
+    box-shadow: 0 0 40px rgba(128, 183, 179, 0.6);
+    margin: 0 45px;
+    transition: transform 0.3s ease;
+}
+
+button::after {
+    content: ' →';
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    background: hsl(176, 28%, 41%);
+}
