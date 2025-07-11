@@ -1,0 +1,86 @@
+/* сброс стилей */
+:root {
+    --primary-font: Arial, sans-serif;
+    --heading-font: Georgia, sans-serif;
+
+    /* Цвета */
+    --primary-color: #333;
+    --secondary-color: #666;
+    --accent-color: #ff941a;
+
+    /* размеры */
+    --max-width: 1200px;
+    --padding: 24px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font);
+    line-height: 1.6;
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+.container {
+    /* max-width: var(--max-width); */
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 0 var(--padding); */
+}
+
+
+.reviews {
+    padding: 0 112px;
+    text-align: center;
+}
+
+.reviews__title {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.reviews__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: var(--padding);
+}
+
+.reviews__item {
+    flex: 1px 1px 300px;
+    max-width: 400px;
+    padding: var(--padding);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(106, 99, 118, 0.1);
+    text-align: left;
+}
+
+.reviews__text {
+    margin-bottom: var(--padding);
+    /* font-size: 16px; */
+}
+
+.reviews__avatar {
+    display: flex;
+    gap: 10px;
+}
+
+
+.reviews__link {
+    color: var(--accent-color);
+    text-decoration: none;
+
+    &:hover {
+        filter: brightness(70%);
+    }
+}
